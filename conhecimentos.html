@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio responsivo site design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-d"></i>
+                    <div class="logo-text">Diego Rodrigues</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><h3><a href="index.html">Home</a></h2></li>
+                        <li><h3><a href="conhecimentos.html">Conhecimentos</a></h2></li>
+                        <li><h3><a href="index.html">Projetos</a></h2></li>
+                        <li><h3><a href="https://wa.me/5511945400950">Whatsapp</a></h3></li>
+                        <li><h3><a href="https://www.linkedin.com/in/diego-rodrigues-9a6172299/">Linkedin</a></h3></li>
+                        <li><h3><a href="mailto:diegorodriguesoli9@gmail.com">Contacte-me</a></h3></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/foto.png" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                   <h2>Linguagens</h2>
+                    <br>
+                   <img src="images/html.png" height="100px" width="400px">
+                   <img src="images/java.png" height="150px" width="150px">
+                   <img src="images/php.png" height="100px" width="150px">
+                   <h2>Softwares</h2>
+                   <br>
+                   <img src="images/softwares.png" height="200px" width="500px">
+                   <img src="images/excel.png" height="150px" width="150px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Diego","Rodrigues","de Oliveira"],
+            typedSpeed:50,
+            backSpeed:70,
+            loop:true
+        })
+    </script>
+</body>
+</html>
